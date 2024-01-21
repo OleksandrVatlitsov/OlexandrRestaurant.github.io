@@ -78,7 +78,7 @@ ul {
     width: 1300px;
     height: 700px;
     display:inline-block;
-    padding-left: 100px;
+  
     
 }
 
@@ -99,28 +99,17 @@ ul {
 
 
 
-.setanta{
-    background-color: #6eb5c0;
-    width: 400px;
-    height: 600px;
-    border: #111 solid 2px;
-    text-align: center;
-    color: #ffccbb;
-    font-size: 80px;
-    transition: 0.4s;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: inline-block;
-    
+
+
+
+.sew{
+    width: 200px;
+    background-color: #006c84;
+    height: 500px;
 }
 
 
 
-
-
-.setanta:hover{
-    background-color: rgb(72, 150, 150);
-    box-shadow: #111 3px 2px 6px 5px;
-}
 
 
 
@@ -292,5 +281,188 @@ table {
 
 
 
+  .bootles{
+    width: 500px;
+    height: 450px;
+    margin: auto;
+    padding-left: 100px;
+    padding-top: 90px;
+    background-color: #006c84;
+    border-radius: 50%;
+    color: #ffccbb;
+    transition: 0.5s;
+  }
 
 
+
+  .bootles:hover{
+    background-color: #6eb5C0;
+    box-shadow: gray 3px 4px 5px 10px;
+  }
+
+
+
+
+  .Burg{
+    width: 400px;
+    height:350px;
+    background-color: #006c84;
+    margin: auto;
+    
+    padding-top: 20px;
+    border-radius: 20%;
+    color: #ffccbb;
+    text-align: center;
+    transition: 0.5s;
+    
+  }
+
+
+
+  .Burg:hover{
+    background-color: #6eb5C0;
+    box-shadow: gray 3px 4px 5px 10px;
+
+  }
+
+
+
+
+
+
+  .list3ed3d{
+    font-size: 40px;
+    background-color: #006c84;
+    color: #ffccbb;
+    width: 700px;
+    padding-left: 50px;
+  }
+
+
+
+
+  .slideshow {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  
+  .slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .slideshow img:first-child {
+    opacity: 1;
+  }
+  
+  @keyframes slide {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .slideshow img {
+    animation: slide 10s infinite;
+  }
+
+
+
+
+
+
+  * {
+    margin: 0;
+    padding: 0;
+ }
+ 
+ .slider {
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    border: 10px solid #000;
+ }
+ 
+ .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+ 
+ .navigation {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+ }
+ 
+ .bar {
+    width: 30px;
+    height: 8px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #000;
+    opacity: .5;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+ }
+ 
+ .bar:hover {
+    opacity: 1;
+    transform:scale(1.1);
+ }
+ 
+ input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+ }
+ 
+ .slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+ }
+ 
+ .slide {
+    width: 25%;
+    transition: all 0.6s ease;
+ }
+ 
+ .img {
+    width: 100%;
+    height: 100%;
+ }
+ 
+ #r1:checked ~ .s1 {
+    margin-left: 0;
+ }
+ 
+ #r2:checked ~ .s1 {
+    margin-left: -25%;
+ }
+ 
+ #r3:checked ~ .s1 {
+    margin-left: -50%;
+ }
+ 
+ #r4:checked ~ .s1 {
+    margin-left: -75%;
+ }
+ 
+ 
